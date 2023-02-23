@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perguntas Frequentes - TOCAPLAY</title>
+    <style>
+        body{
+            background-image: linear-gradient(to right, white, orange);
+
+
+        }
+        .layout{
+            width: 600px;
+            margin: auto;
+            
+        }
+        .accordion{
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            background-image: linear-gradient(to right, orange, red);
+            border-radius: 10px;
+        }
+        .accordion__perguntas p{
+            margin: 6px;
+            padding: 15;
+            font-weight: bold
+            font-size large
+            font-family Impact
+            font-size 20px
+        
+        }
+        .accordion__respostas p{
+            margin: 5px;
+            padding: 10px;
+            font-size: large;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: rgb(255, 255, 255);
+            text-shadow: 1px 1px 2px black;
+            background-image: white;
+            border-radius: 10px;
+
+        }
+        .accordion:hover{
+            cursor: pointer;
+        }
+        .accordion__respostas {
+            display: none;
+        } 
+        .accordion.active .accordion__respostas {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <p>
+    <center><img src="C:\Users\felip\OneDrive\Documentos\RAFAEL ELIEN- UNIFOR - ADS\Desenvolvimento de Software WEB\Proj. Cenário 1\TOCA PLAY 3.png" width="300px"  title="Logo" align="middle"></center>
+    </p>
+    <br>
+    <h1 style="color:Black; text-align:center">Perguntas Frequentes</h1>
+    <br>
+    <div class="layout">
+        <div class="accordion">
+            <div class="accordion__perguntas">
+                <p>Como faço meu Cadastro?</p>
+
+    
+            </div>
+            <div class="accordion__respostas">
+                <p>Preenchendo o formulário para cadastro com seus dados <br>
+                    ou pode também se conectar com suas redes sociais.</p>
+  
+            </div>
+        </div>
+        <div class="accordion">
+            <div class="accordion__perguntas">
+                <p>Como criar uma Playlist?</p>
+  
+            </div>
+            <div class="accordion__respostas">
+                <p>
+                  De forma bem simplificada, na música que está
+                  sendo reproduzida existe o icone de adcionar +
+                  clique em cima que será redirecionado a Playlist
+                  que você escolher. 
+                </p>
+  
+            </div>
+        </div>
+                <div class="accordion">
+            <div class="accordion__perguntas">
+                <p>Quais os tipos de Planos?</p>
+
+    
+            </div>
+            <div class="accordion__respostas">
+                <p>São os Planos: TocaPlay Gold com todas funcionalidades liberadas, TocaPlay Family
+                pra toda sua família curti o melhor das atualidades da música ou TocaPlay PRO para 
+                ultilização profissional podendo fazer playback ou VS.  
+                </p>
+  
+            </div>
+        </div>
+                <div class="accordion">
+            <div class="accordion__perguntas">
+                <p>O que é o TocaPlay?</p>
+
+    
+            </div>
+            <div class="accordion__respostas">
+                <p>É um serviço digital que dá acesso instantâneo a milhões de músicas, podcasts, vídeos 
+                e outros conteúdos de criadores no mundo todo e está disponível para vários dispositivos, 
+                incluindo computadores, celulares, tablets, TVs e carros.</p>
+  
+            </div>
+        </div>
+                <div class="accordion">
+            <div class="accordion__perguntas">
+                <p>Posso ouvir as músicas offline no TocaPlay?</p>
+
+    
+            </div>
+            <div class="accordion__respostas">
+                <p>Dependendo do Plano adquirido o usuário pode baixar as músicas preferidas
+                para um armazenamento próprio para ouvir offline na plataforma TocaPlay.</p>
+  
+            </div>
+        </div>
+    </div>
+  
+    <script>
+        let respostas=document.querySelectorAll(".accordion");
+        respostas.forEach((event)=>{
+            event.addEventListener('click',()=>{
+                if(event.classList.contains("active")){
+                    event.classList.remove("active");
+                }
+                else{
+                    event.classList.add("active");
+                }
+            })
+        })
+    </script>
+  
+</body>
+</html>
